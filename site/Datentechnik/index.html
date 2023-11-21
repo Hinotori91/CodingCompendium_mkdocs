@@ -1,118 +1,888 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Datentechnik - Mitschriften</title>
-    <link rel="stylesheet" href="../css/theme.css" />
-    <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
     
-      <script>
-        // Current page data
-        var mkdocs_page_name = "Datentechnik";
-        var mkdocs_page_input_path = "Datentechnik.md";
-        var mkdocs_page_url = null;
-      </script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../Zahlensysteme/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
     
-    <!--[if lt IE 9]>
-      <script src="../js/html5shiv.min.js"></script>
-    <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
-</head>
+    
+      
+        <title>Datentechnik - Mitschriften</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4b4a2bd9.min.css">
+      
+      
 
-<body class="wy-body-for-nav" role="document">
 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Mitschriften
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
-                </li>
-              </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Datentechnik</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#ip-adresse">IP - Adresse</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#was-ist-eine-ip-adresse">Was ist eine IP-Adresse?</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#was-sagt-meine-ip-adresse-uber-mich-aus">Was sagt meine IP-Adresse über mich aus?</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#wie-funktioniert-eine-ip-adresse">Wie funktioniert eine IP-Adresse?</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#arten-von-ip-adressen">Arten von IP-Adressen</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#-verbraucher-ip-adressen">- Verbraucher-IP-Adressen</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#-private-ip-adressen">- Private IP-Adressen</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#offentliche-ip-adressen">Öffentliche IP-Adressen</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#offentliche-ip-adressen_1">Öffentliche IP-Adressen</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#dynamische-ip-adressen">Dynamische IP-Adressen</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#statische-ip-adressen">Statische IP-Adressen</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#es-gibt-zwei-arten-von-ip-adressen-fur-webseiten">Es gibt zwei Arten von IP-Adressen für Webseiten</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#gemeinsam-genutzte-ip-adressen">Gemeinsam genutzte IP-Adressen</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#fest-zugeordnete-ip-adressen">Fest zugeordnete IP-Adressen</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#eine-ip-adresse-in-erfahrung-bringen">Eine IP-Adresse in Erfahrung bringen</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#netzwerk-adresse">Netzwerk-Adresse</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#broadcast-adresse">Broadcast-Adresse</a>
-    </li>
-    </ul>
-                </li>
-              </ul>
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#datentechnik" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Mitschriften" class="md-header__button md-logo" aria-label="Mitschriften" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mitschriften
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Datentechnik
+            
+          </span>
+        </div>
       </div>
     </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Mitschriften</a>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
         
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
       </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Datentechnik</li>
-    <li class="wy-breadcrumbs-aside">
-    </li>
-  </ul>
-  <hr/>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
               
-                <h1 id="datentechnik">Datentechnik</h1>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Mitschriften" class="md-nav__button md-logo" aria-label="Mitschriften" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Mitschriften
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Datentechnik
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Datentechnik
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Datentechnik
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Datentechnik
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ip-adresse" class="md-nav__link">
+    IP - Adresse
+  </a>
+  
+    <nav class="md-nav" aria-label="IP - Adresse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#was-ist-eine-ip-adresse" class="md-nav__link">
+    Was ist eine IP-Adresse?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#was-sagt-meine-ip-adresse-uber-mich-aus" class="md-nav__link">
+    Was sagt meine IP-Adresse über mich aus?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wie-funktioniert-eine-ip-adresse" class="md-nav__link">
+    Wie funktioniert eine IP-Adresse?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arten-von-ip-adressen" class="md-nav__link">
+    Arten von IP-Adressen
+  </a>
+  
+    <nav class="md-nav" aria-label="Arten von IP-Adressen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-verbraucher-ip-adressen" class="md-nav__link">
+    - Verbraucher-IP-Adressen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-private-ip-adressen" class="md-nav__link">
+    - Private IP-Adressen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offentliche-ip-adressen" class="md-nav__link">
+    Öffentliche IP-Adressen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offentliche-ip-adressen_1" class="md-nav__link">
+    Öffentliche IP-Adressen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamische-ip-adressen" class="md-nav__link">
+    Dynamische IP-Adressen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statische-ip-adressen" class="md-nav__link">
+    Statische IP-Adressen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#es-gibt-zwei-arten-von-ip-adressen-fur-webseiten" class="md-nav__link">
+    Es gibt zwei Arten von IP-Adressen für Webseiten
+  </a>
+  
+    <nav class="md-nav" aria-label="Es gibt zwei Arten von IP-Adressen für Webseiten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gemeinsam-genutzte-ip-adressen" class="md-nav__link">
+    Gemeinsam genutzte IP-Adressen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fest-zugeordnete-ip-adressen" class="md-nav__link">
+    Fest zugeordnete IP-Adressen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eine-ip-adresse-in-erfahrung-bringen" class="md-nav__link">
+    Eine IP-Adresse in Erfahrung bringen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#netzwerk-adresse" class="md-nav__link">
+    Netzwerk-Adresse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#broadcast-adresse" class="md-nav__link">
+    Broadcast-Adresse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dora" class="md-nav__link">
+    DORA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unc-uniform-naming-convention" class="md-nav__link">
+    UNC (Uniform Naming Convention)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zahlensysteme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zahlensysteme
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Webdevelopment
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Webdevelopment
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    HTML
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            HTML
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Webdevelopment/HTML/HTML_Basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTML Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Webdevelopment/HTML/Kontaktforumlar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kontaktformular
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Webdevelopment/HTML/Responsive_Design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Responsive Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    CSS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            CSS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Webdevelopment/CSS/CSS_Basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSS Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ip-adresse" class="md-nav__link">
+    IP - Adresse
+  </a>
+  
+    <nav class="md-nav" aria-label="IP - Adresse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#was-ist-eine-ip-adresse" class="md-nav__link">
+    Was ist eine IP-Adresse?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#was-sagt-meine-ip-adresse-uber-mich-aus" class="md-nav__link">
+    Was sagt meine IP-Adresse über mich aus?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wie-funktioniert-eine-ip-adresse" class="md-nav__link">
+    Wie funktioniert eine IP-Adresse?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arten-von-ip-adressen" class="md-nav__link">
+    Arten von IP-Adressen
+  </a>
+  
+    <nav class="md-nav" aria-label="Arten von IP-Adressen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-verbraucher-ip-adressen" class="md-nav__link">
+    - Verbraucher-IP-Adressen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-private-ip-adressen" class="md-nav__link">
+    - Private IP-Adressen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offentliche-ip-adressen" class="md-nav__link">
+    Öffentliche IP-Adressen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offentliche-ip-adressen_1" class="md-nav__link">
+    Öffentliche IP-Adressen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamische-ip-adressen" class="md-nav__link">
+    Dynamische IP-Adressen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statische-ip-adressen" class="md-nav__link">
+    Statische IP-Adressen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#es-gibt-zwei-arten-von-ip-adressen-fur-webseiten" class="md-nav__link">
+    Es gibt zwei Arten von IP-Adressen für Webseiten
+  </a>
+  
+    <nav class="md-nav" aria-label="Es gibt zwei Arten von IP-Adressen für Webseiten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gemeinsam-genutzte-ip-adressen" class="md-nav__link">
+    Gemeinsam genutzte IP-Adressen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fest-zugeordnete-ip-adressen" class="md-nav__link">
+    Fest zugeordnete IP-Adressen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eine-ip-adresse-in-erfahrung-bringen" class="md-nav__link">
+    Eine IP-Adresse in Erfahrung bringen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#netzwerk-adresse" class="md-nav__link">
+    Netzwerk-Adresse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#broadcast-adresse" class="md-nav__link">
+    Broadcast-Adresse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dora" class="md-nav__link">
+    DORA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unc-uniform-naming-convention" class="md-nav__link">
+    UNC (Uniform Naming Convention)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="datentechnik">Datentechnik</h1>
 <h2 id="ip-adresse">IP - Adresse</h2>
 <p>Eine IP-Adresse ist eine individuelle Adresse, die ein Gerät im Internet oder auf einem lokalen Netzwerk identifiziert. "IP" steht für "Internetprotokoll", wobei es sich um einen Satz von Regeln handelt, der das Format der Daten bestimmt, die über das Internet oder das lokale Netzwerk gesendet werden. 
 Sie wird Geräten zugewiesen, die an das Netz angebunden sind, macht die Geräte dadurch adressierbar und erreichbar. Die Ip-Adresse kann einen einzelnen Empfänger oder eine Gruppe von Empfängern bezeichnen
@@ -179,49 +949,108 @@ Im Allgemeinen erhalten Sie mit diesem Verfahren nur Informationen zum ungefähr
 </ul>
 <p>Die IP-Adressen der anderen Geräte auf Ihrem Netzwerk erhalten Sie über den Router. Der Zugriff auf den Router ist von der Marke und der verwendeten Software abhängig. Im Allgemeinen sollten Sie für einen Zugriff darauf den Typ der Gateway-IP-Adresse des Routers in einen Webbrowser auf demselben Netzwerk eingeben können. Navigieren Sie von dort aus zu etwas wie „zugewiesene Geräte“, wo Sie eine Liste mit allen Geräten vorfinden sollten, die dem Netzwerk aktuell zugewiesen sind oder die kürzlich zugewiesen wurden – einschließlich der jeweiligen IP-Adressen.</p>
 <h2 id="netzwerk-adresse">Netzwerk-Adresse</h2>
+<p>Die Netzwerkadresse ist ein Teil einer IP-Adresse und bezieht sich auf den Teil der Adresse, der das spezifische Netzwerk identifiziert, zu dem ein Gerät gehört. In IP-Adressen gibt es normalerweise zwei Hauptteile: die Netzwerkadresse und die Hostadresse.</p>
+<ul>
+<li>
+<p>Netzwerkadresse: </p>
+<ul>
+<li>Diese Identifikation gibt an, welchem Netzwerk ein Gerät angehört. Es ist der Teil der IP-Adresse, der die Netzwerktopologie bestimmt und verwendet wird, um Daten zwischen verschiedenen Netzwerken zu routen.</li>
+</ul>
+</li>
+<li>
+<p>Hostadresse: </p>
+<ul>
+<li>Dieser Teil der IP-Adresse identifiziert ein spezifisches Gerät (einen Host) innerhalb des Netzwerks. Er wird verwendet, um Daten an ein bestimmtes Gerät in diesem Netzwerk zu übermitteln.</li>
+</ul>
+</li>
+</ul>
+<p>Die genaue Aufteilung zwischen Netzwerk- und Hostadresse variiert je nach Klasse des IP-Adressierungsschemas. Bei IPv4 werden IP-Adressen üblicherweise in Netzwerk- und Hostteile unterteilt, wobei die Anzahl der Bits, die für das Netzwerk und die Hosts verwendet werden, von der spezifischen Subnetzmaske bestimmt wird.</p>
+<p>Bei IPv6 ist die Aufteilung anders und bietet viel größere Adressbereiche, wodurch mehr Bits für die Hostadresse verfügbar sind.</p>
+<p>In jedem Fall dient die Netzwerkadresse dazu, Geräte in logische Gruppen zu organisieren und den Weg der Daten innerhalb eines Netzwerks oder zwischen verschiedenen Netzwerken zu bestimmen.</p>
 <h2 id="broadcast-adresse">Broadcast-Adresse</h2>
-              
+<p>Die Broadcast-Adresse ist eine spezielle Art von IP-Adresse, die in Netzwerken verwendet wird, um Datenpakete an alle Geräte innerhalb eines bestimmten Netzwerks zu senden.</p>
+<p>Im Kontext von IPv4-Netzwerken wird die Broadcast-Adresse durch das Setzen aller Hostbits auf 1 in der Netzwerkadresse erzeugt. Das bedeutet, dass alle Geräte in diesem Netzwerk, die diese Broadcast-Adresse als Zieladresse erhalten, die Datenpakete verarbeiten werden. Die Broadcast-Adresse wird verwendet, wenn ein Gerät Informationen an alle anderen Geräte in seinem lokalen Netzwerk senden möchte.</p>
+<p>Zum Beispiel, wenn eine Netzwerkadresse 192.168.1.0 mit einer Subnetzmaske von 255.255.255.0 verwendet wird, ist die Broadcast-Adresse 192.168.1.255. Das Gerät kann Daten an diese Adresse senden, und alle Geräte im Netzwerk mit einer IP-Adresse innerhalb dieses Subnetzes werden diese Nachricht empfangen.</p>
+<p>In IPv6-Netzwerken gibt es keine spezifische Broadcast-Adresse wie bei IPv4. Stattdessen wird der "All Nodes Multicast" genutzt, um Pakete an alle Knoten im Netzwerk zu senden. Dies ist vergleichbar mit der Funktion der Broadcast-Adresse in IPv4, indem es ermöglicht, Informationen an alle Knoten in einem IPv6-Netzwerk zu übertragen.</p>
+<h2 id="dora">DORA</h2>
+<p>D - Discover
+O - Offer
+R - Request
+A - Acknowledge</p>
+<p>Port 67, 68</p>
+<p>In der Netzwerktechnik bezieht sich DORA normalerweise auf einen Prozess im DHCP (Dynamic Host Configuration Protocol). DHCP ist ein Protokoll, das die automatische Zuweisung von IP-Adressen und anderen Netzwerkkonfigurationen an Geräte in einem Netzwerk ermöglicht.</p>
+<ul>
+<li>
+<p>Discover (Entdecken): </p>
+<ul>
+<li>Ein Gerät, das sich mit dem Netzwerk verbinden möchte und eine IP-Adresse benötigt, sendet ein DHCP-Discover-Paket an das Netzwerk. Dieses Paket fragt nach verfügbaren DHCP-Servern.</li>
+</ul>
+</li>
+<li>
+<p>Offer (Angebot): </p>
+<ul>
+<li>Die DHCP-Server im Netzwerk empfangen das Discover-Paket und antworten mit einem DHCP-Offer. Dieses Angebot beinhaltet eine IP-Adresse und andere Netzwerkkonfigurationen, die dem anfragenden Gerät zugewiesen werden können.</li>
+</ul>
+</li>
+<li>
+<p>Request (Anfrage): </p>
+<ul>
+<li>Nachdem das anfragende Gerät ein DHCP-Offer erhalten hat, wählt es eine der angebotenen IP-Adressen aus und sendet eine DHCP-Request-Nachricht an den ausgewählten Server. Dies ist eine formelle Anfrage, die besagt, dass das Gerät die angebotene Konfiguration akzeptiert.</li>
+</ul>
+</li>
+<li>
+<p>Acknowledge (Anerkennen): </p>
+<ul>
+<li>Der DHCP-Server erhält die DHCP-Request-Nachricht und bestätigt die Zuweisung der angefragten IP-Adresse und Konfiguration, indem er eine DHCP-Acknowledgement-Nachricht zurücksendet. Dadurch akzeptiert das Gerät offiziell die zugewiesene Netzwerkkonfiguration.</li>
+</ul>
+</li>
+</ul>
+<p>DORA beschreibt also den Prozess der IP-Adresszuweisung durch den DHCP-Server an ein Gerät, das sich mit einem Netzwerk verbinden möchte.</p>
+<h2 id="unc-uniform-naming-convention">UNC (Uniform Naming Convention)</h2>
+<p>//<code>Servername oder IP-Adresse</code> \ <code>Ordner-Name</code></p>
+
+
+
+
+
+                
+              </article>
             </div>
-          </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
+          
           
         </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-    
-      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
-    
-    
-  </span>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
 </div>
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = "..";</script>
-    <script src="../js/theme_extra.js"></script>
-    <script src="../js/theme.js"></script>
-      <script src="../search/main.js"></script>
-    <script>
-        jQuery(function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        });
-    </script>
-
-</body>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+    
+  </body>
 </html>
