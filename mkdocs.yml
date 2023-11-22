@@ -2,7 +2,7 @@ site_name: Mitschriften
 nav:
   - Home: index.md
   - Datentechnik:
-    - Datentechnik: Datentechnik.md
+    - Datentechnik: Datentechnik/Datentechnik.md
     - Zahlensysteme: Zahlensysteme.md
   - Webdevelopment:
     - HTML:
