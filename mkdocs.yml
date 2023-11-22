@@ -4,6 +4,7 @@ nav:
   - Datentechnik:
     - IP-Adresse: Datentechnik/IP-Adresse.md
     - Netzwerkadresse: Datentechnik/Netzwerkadresse.md
+    - Broadcastadresse: Datentechnik/Broadcastadresse.md
     - Datentechnik: Datentechnik/Datentechnik.md
     - Zahlensysteme: Datentechnik/Zahlensysteme/Zahlensysteme.md
   - Webdevelopment:
@@ -13,6 +14,8 @@ nav:
       - Responsive Design: Webdevelopment/HTML/Responsive_Design.md
     - CSS:
       - CSS Basics: Webdevelopment/CSS/CSS_Basics.md
+      - Box-Model: Webdevelopment/CSS/Box Model-Flexbox-Grid.md
+
 theme: material
 # theme: readthedocs
 
