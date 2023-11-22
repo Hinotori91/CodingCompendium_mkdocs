@@ -2,6 +2,8 @@ site_name: Mitschriften
 nav:
   - Home: index.md
   - Datentechnik:
+    - IP-Adresse: Datentechnik/IP-Adresse.md
+    - Netzwerkadresse: Datentechnik/Netzwerkadresse.md
     - Datentechnik: Datentechnik/Datentechnik.md
     - Zahlensysteme: Zahlensysteme.md
   - Webdevelopment:
