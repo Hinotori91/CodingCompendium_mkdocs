@@ -5,7 +5,7 @@ nav:
     - IP-Adresse: Datentechnik/IP-Adresse.md
     - Netzwerkadresse: Datentechnik/Netzwerkadresse.md
     - Datentechnik: Datentechnik/Datentechnik.md
-    - Zahlensysteme: Zahlensysteme.md
+    - Zahlensysteme: Datentechnik/Zahlensysteme/Zahlensysteme.md
   - Webdevelopment:
     - HTML:
       - HTML Basics: Webdevelopment/HTML/HTML_Basics.md
