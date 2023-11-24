@@ -31,8 +31,12 @@ theme: material
 
 extra:
   social:
-    - icon: fontawesome/brands/mastodon 
-      link: https://fosstodon.org/@squidfunk
+    - icon: fontawesome/brands/github
+      link: https://github.com/Hinotori91
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/Hinotori91
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/petra-camondo-5836bb109/
 
 markdown_extensions:
   - pymdownx.arithmatex:
