@@ -2,7 +2,8 @@ IPO = Input | Progressing | Output
 
 EVA = Eingabe | Verarbeitung | Ausgabe
 
-$$f(x)=2x+7$$
+$$f(x) = 2x + 7$$
+
 Ausgabe = Input + Verarbeitung
 
 |      |       |       |       |
@@ -21,9 +22,9 @@ Ausgabe = Input + Verarbeitung
 - Wechsel des Zahlensystems ist die Änderung der Grundzahl (10)
 - Zahlen gehen von 0-9
 
-5732,81 = $5 * 10^3 + 7 * 10^2 + 3 * 10^1 + 2 * 10^0 + 8 * 10^{-1} + 1 * 10^{-2}$
+$5732,81 = 5 * 10^3 + 7 * 10^2 + 3 * 10^1 + 2 * 10^0 + 8 * 10^{-1} + 1 * 10^{-2}$
 
-5732,61 = $5 * 8^3 + 7 * 8^2 + 3 * 8^1 + 2 * 8^0 + 6 * 8^{-1} + 1 * 8^{-2}$ = $5 * 512 + 7 * 64 + 3 * 8 + 2 * 1 + \frac{6}{8}+ \frac{1}{64}$
+$5732,61 = 5 * 8^3 + 7 * 8^2 + 3 * 8^1 + 2 * 8^0 + 6 * 8^{-1} + 1 * 8^{-2}$ = $5 * 512 + 7 * 64 + 3 * 8 + 2 * 1 + \frac{6}{8}+ \frac{1}{64}$
 
 # Hexadezimal
 Große Binärzahlen haben den Nachteil, dass sie sehr unübersichtlich sind. Um dem Abhilfe zu schaffen hat man das Hexadezimalsystem eingeführt. Dabei werden 4-Bit Dualzahl durch ein hexadezimales Zeichen ersetzt.
@@ -42,7 +43,7 @@ Da eine 4-Bit Dualzahl 16 Zustände annehmen kann, wir aber nur 10 dezimale Zahl
 
 **Größter Nennwert**: F
 
-**Stellenwerte**: $16^0$ = 1, $16^1$ = 16, $16^2$ = 256 usw.
+**Stellenwerte**: $16^0 = 1, 16^1 = 16, 16^2 = 256$ usw.
 
 Zum besseren Verständnis der Zählweise im hexadezimalen Zahlensystem dient diese Tabelle. Jeweils 4 Dualstellen bilden eine Hexadezimalstelle.
 
