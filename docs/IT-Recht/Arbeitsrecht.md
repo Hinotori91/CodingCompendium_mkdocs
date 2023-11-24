@@ -1,5 +1,3 @@
-% Arbeitsrecht
-
 # Warum gibt es ein Arbeitsrecht und was ist die grundsätzliche Funktion des Arbeitsrecht?
 Das Arbeitsrecht gibt es, um den Interessen von Arbeitnehmern und Arbeitgebern gerecht zu werden. Es soll sicherstellen, dass Arbeitnehmer fair behandelt werden und ihre Rechte gewahrt sind. Gleichzeitig soll es Arbeitgebern ermöglichen, ihre Unternehmen effizient zu führen und Arbeitsplätze zu schaffen.
 

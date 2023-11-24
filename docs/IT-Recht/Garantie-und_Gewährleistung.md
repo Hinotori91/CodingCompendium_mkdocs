@@ -1,6 +1,3 @@
-% Garantie & Gewährleistung
-
-
 ## Was ist die Gewährleistung?
 - gesetzlich verankertes Recht des Verbrauchers
 - Verkäufer hat dafür einzustehen, dass die Ware frei von Mängeln ist

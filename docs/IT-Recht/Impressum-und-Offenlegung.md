@@ -1,6 +1,3 @@
-% Impressum & Offenlegungspflicht
-DAS KORREKTE WEBSITE IMPRESSUM
-
 # Fassen Sie kurz zusammen was die Impressumspflichten nach dem Unternehmensgesetzbuch und der Gewerbeordnung an Inhalten im Impressum fordert?
 - Unternehmen, die eine Website betreiben, müssen bestimmte Informationen veröffentlichen, wie den Firmennamen, die Anschrift, die Telefonnummer, die E-Mail-Adresse, die Handelsregisternummer und die Umsatzsteuer-Identifikationsnummer.
 - Die Impressumspflicht gilt für alle Unternehmen, unabhängig davon, ob sie ein Handelsgewerbe betreiben, eine Freiberuflertätigkeit ausüben oder eine gemeinnützige Organisation sind.

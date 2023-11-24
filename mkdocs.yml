@@ -26,8 +26,24 @@ nav:
     - Telekommunikationsgesetz (TKG) 2021: IT-Recht/Telekommunikationsgesetz-(TKG)-2021.md
 
     
-theme: material
+theme: 
+  name: material
 # theme: readthedocs
+  primary: indigo
+  accent: indigo
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
 
 extra:
   social:
@@ -38,6 +54,9 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/petra-camondo-5836bb109/
 
+# copyright: Copyright &copy; Petra Camondo
+
+
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
@@ -46,3 +65,6 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - ./css/style.css

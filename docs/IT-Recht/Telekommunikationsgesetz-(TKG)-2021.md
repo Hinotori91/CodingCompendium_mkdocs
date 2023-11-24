@@ -1,5 +1,3 @@
-% Telekommunikationsgesetz 2021 (TKG 2021)
-
 # Was ist die primäre Aufgabe des TKG 2021?
 Das Telekommunikationsgesetz hat die primäre Aufgabe, die Rahmenbedingungen für die Bereitstellung von Telekommunikationsdiensten zu schaffen.
     
