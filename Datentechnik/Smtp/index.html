@@ -76,6 +76,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#smtp-simple-mail-transfer-protocol" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -425,6 +430,8 @@
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
+      
+        
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
@@ -900,6 +907,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -914,9 +923,62 @@
                   
 
 
-  <h1>Smtp</h1>
-
-
+<h1 id="smtp-simple-mail-transfer-protocol">SMTP - Simple Mail Transfer Protocol</h1>
+<ul>
+<li>Ist ein Protokoll das für das Senden von E-Mails zuständig ist. Für das Empfangen wird allerdings POP3 oder IMAP gebraucht!</li>
+</ul>
+<!-- - Auf UNIX-basierten Systemen werden meist sendmail und postfix als SMTP-Server für E-Mails eingesetzt. -->
+<ul>
+<li>Basiert auf TCP/IP und Port 25</li>
+<li>Ist ein verbindungsorientiertes, textbasiertes Netzwerkprotokoll aus der Internetprotokollfamilie und ist als solches auf der siebten Schicht des OSI-Modells, der Anwendungsschicht, angesiedelt.</li>
+<li>Als Nachfolger vom Arpanet ist SMTP zum Standardprotokoll für den Versand von Emails geworden.</li>
+<li>Arbeitet im jeweiligen Webmail-Anwendungen m Hintergrund</li>
+</ul>
+<h1 id="wie-funktioniert-das-smtp-verfahren">Wie funktioniert das SMTP-Verfahren?</h1>
+<ol>
+<li>Der SMTP-Client, also der Absender, lädt die E-Mail auf den SMTP-Server, also den E-Mail-Server (Postausgangsserver) des jeweiligen E-Mail-Providers. Dies geschieht über eine Webmail-Anwendung im Browser oder ein E-Mail-Programm (technisch „Mail User Agent“, kurz MUA, genannt) wie Windows Live Mail oder Mozilla Thunderbird.</li>
+<li>Der SMTP-Server kontaktiert daraufhin den DNS-Server, und dieser sucht die IP-Adresse des Ziel-SMTP-Servers (auch „Mail Delivery Agent“, kurz MDA) heraus, die für die Empfängeradresse der E-Mail hinterlegt ist.</li>
+<li>Der SMTP-Server schickt die E-Mail über einen oder mehrere „Mail Transfer Agents“ (MTA) zum Ziel-SMTP-Server. Jeder dieser Weiterleitungsvorgänge läuft dabei nach dem SMTP-Protokoll ab.</li>
+<li>Der Ziel-SMTP-Server speichert die E-Mail temporär im Nachrichtenspeicher.</li>
+<li>Der Empfänger-MUA lädt die E-Mail entweder per IMAP oder POP3 herunter.
+<img alt="Alt text" src="../img/smtp/csm_smtp-verfahren_a6322aa498.webp" /></li>
+</ol>
+<h1 id="smtp-session">SMTP-Session</h1>
+<ul>
+<li>In der SMTP-Session interagieren SMTP-Client und SMTP-Server.</li>
+<li>Der Rest des Verfahrens, wie die E-Mail-Weiterleitung, wird später behandelt.</li>
+<li>Die Session beinhaltet SMTP-Kommandos vom Client und Statuscodes vom Server.
+<img alt="Alt text" src="../img/smtp/image.png" /></li>
+</ul>
+<p>Auf jedes dieser SMTP-Kommandos des Clients antwortet der Server mit einem dreistelligen Statuscode inklusive Klartextmeldung.
+<img alt="Alt text" src="../img/smtp/smtp-statuscodes.PNG" /></p>
+<p>Eine SMTP-Session zwischen Client und Server kann beispielsweise wie folgt ablaufen:
+<img alt="Alt text" src="../img/smtp/smtp-beispiel-session.png" /></p>
+<h1 id="was-sind-nachteile-des-smtp-protokolls">Was sind Nachteile des SMTP-Protokolls?</h1>
+<ul>
+<li>Fehlende verwertbare Versandbestätigung.</li>
+<li>Fehlende Authentifizierung beim Verbindungsaufbau.</li>
+<li>Fehlgeschlagene Übertragungen erschweren Fehleranalyse.</li>
+<li>Offene SMTP-Relays werden für Spam missbraucht.</li>
+<li>Fake-Absenderadressen (Mail-Spoofing) erschweren die Rückverfolgung.</li>
+<li>Sicherheitstechniken wie DomainKeys, SPF und Greylisting sind im Einsatz.</li>
+<li>Port 587/TCP wird für authentifizierte Übertragungen genutzt.</li>
+</ul>
+<h1 id="smtps">SMTPS</h1>
+<ul>
+<li>smtpS ist smtp mit ssl oder tls als verschlüsselung</li>
+</ul>
+<h1 id="was-ist-esmtp">Was ist ESMTP?</h1>
+<p>Als Reaktion auf das grassierende Spam-Problem im Internet wurde im Jahr 1995 eine Erweiterung des SMTP herausgebracht: Extended SMTP (kurz ESMTP). Es ergänzt das Protokoll um weitere Kommandos im 8-Bit-ASCII-Code, mit denen viele neue Funktionen zur Einsparung von Bandbreite und zum Schutz von Servern möglich wurden.</p>
+<ul>
+<li>Authentifizierung des Absenders</li>
+<li>SSL-Verschlüsselungen von E-Mails</li>
+<li>Anhängen von Multimedia-Dateien an E-Mails</li>
+<li>Größenbeschränkungen von E-Mails gemäß Server-Vorgaben</li>
+<li>Gleichzeitiger Versand an mehrere Empfänger</li>
+<li>Standardisierte Fehlermeldungen bei Unzustellbarkeit</li>
+</ul>
+<p><img alt="Alt text" src="../img/smtp/image-1.png" /></p>
 
 
 
