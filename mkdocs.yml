@@ -8,10 +8,10 @@ nav:
     - Broadcastadresse: Datentechnik/Broadcastadresse.md
     - Datentechnik: Datentechnik/Datentechnik.md
     - Zahlensysteme: Datentechnik/Zahlensysteme/Zahlensysteme.md
-    - Netzwerkprotokolle: Netzwerkprotokolle.md
-    - Routing: routing.md
-    - Smtp: Smtp.md
-    - Verschlüsselung: Verschlüsselung.md
+    - Netzwerkprotokolle: Datentechnik/Netzwerkprotokolle.md
+    - Routing: Datentechnik/routing.md
+    - Smtp: Datentechnik/Smtp.md
+    - Verschlüsselung: Datentechnik/Verschlüsselung.md
   - Webdevelopment:
     - HTML:
       - HTML Basics: Webdevelopment/HTML/HTML_Basics.md
